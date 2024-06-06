@@ -1,0 +1,15 @@
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+
+AllCops:
+  Include:
+    - Rakefile
+    - Gemfile
+    - 'lib/**/*.rb'
+  Exclude:
+    - hashy_validator.gemspec
+    - vendor/**/*
+    - Rakefile.rb
+
+Metrics/MethodLength:
+  Enabled: false
